@@ -36,6 +36,11 @@
     padding: 0.5rem;
     border-radius: 12px;
   }
+
+  .expense-item__location{
+    font-size: 1rem;
+    color: white;
+  }
   
   @media (min-width: 580px) {
     .expense-item__description {
