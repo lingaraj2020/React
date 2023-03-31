@@ -1,5 +1,8 @@
 import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
+import ExpenseDetails from "./ExpenseDetails";
+import ExpenseDate from "./ExpenseDate";
+import React from "react";
 
 function Expenses(props) {
   return (
@@ -8,6 +11,7 @@ function Expenses(props) {
         title={props.items[0].title}
         amount={props.items[0].amount}
         date={props.items[0].date}
+        location={props.loc}
       />
       <ExpenseItem
         title={props.items[1].title}
