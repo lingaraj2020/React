@@ -1,3 +1,5 @@
+import Card from "./Card";
+
 function ExpenseDetails(props) {
   return (
     <div className="expense-item__description">
