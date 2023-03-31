@@ -4,7 +4,7 @@ import ExpenseDetails from "./ExpenseDetails";
 import ExpenseDate from "./ExpenseDate";
 import React from "react";
 
-function Expenses(props) {
+const Expenses=(props)=> {
   return (
     <div className="expenses">
       <ExpenseItem
