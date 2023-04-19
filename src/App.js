@@ -1,6 +1,8 @@
 import React from "react";
 //import ExpenseItem from "./components/Expenses/ExpenseItem";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
+
 const App = () => {
   const expenses = [
     {
@@ -32,16 +34,12 @@ const App = () => {
       location: "bombay",
     },
   ];
-  return React.createElement(
-    "div",
-    {},
-    React.createElement("h2", {}, "lets started"),
-    React.createElement(Expenses, { items: expenses })
+  return(
+  <div>
+    <NewExpense/>
+    <Expenses items={expenses} />
+  </div>
   );
-  // <div>
-  //   <h2>lets started</h2>
-  //   <Expenses items={expenses} />
-  // </div>
 }
 
 export default App;
